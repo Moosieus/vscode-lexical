@@ -11,7 +11,7 @@ const restartServer: ClientCommands.T<Context> = {
 	createHandler: ({ client }) => {
 		function handle() {
 			if (client.isRunning()) {
-				Logger.info("Lexical client is already running. Restarting.");
+				Logger.info("Lexical client is already running. Restarting... This is a test!");
 				client.restart();
 			} else {
 				Logger.info("Lexical client is not running. Starting.");
